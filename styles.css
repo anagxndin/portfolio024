@@ -1,13 +1,38 @@
 /* styles.css */
+/*
+PALLETE
+*/
+
+:root {
+--Champagne:#fae6d3;
+
+--SeaPink: #f08f8f;
+
+--Mandy: #de4f5c;
+
+--Sandybrown: #f09d57;
+
+--Cream: #f9f1f0;
+
+--RoseQuartz: #fadcd9;
+
+--DustyRose: #f8afa6;
+
+--Coral: #f79489;
+
+
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Geologica";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--Champagne);
 }
 
 header {
-    background-color: #333;
+    background-color: var(--Coral);
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -21,30 +46,54 @@ header h1 {
     margin: 0;
 }
 
-nav ul {
+#menu {
+    /*tira os  tópicos da lista*/
     list-style-type: none;
-    padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
 }
 
-nav li {
+#menuNav li {
     margin: 0 1rem;
 }
 
-nav a {
+#menuNav a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
 }
 
-nav a:hover {
-    background-color: #555;
-    border-radius: 5px;
+#menuNav a:hover {
+    background-color: var(--Mandy);
+    
+}
+
+#secSobre {
+    padding: 2em;
+    align-items: center;
+    background-color: var(--SeaPink);
+}
+#sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f09d57;
+    padding: 0;
+    margin: 0;
+}
+#profilepic {
+    width: 25vw;
+}
+
+.sobreP {
+    width: 26vw;
+    margin-left: 2em;
+    margin-right: 0;
 }
 
 main {
+    align-items: center;
     padding: 5rem 2rem 2rem 2rem; /* Ajuste o padding superior para evitar sobreposição com o menu fixo */
 }
 
@@ -57,6 +106,10 @@ section {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+.projeto a {
+    color: var(--Mandy);
 }
 
 form label {
@@ -86,7 +139,7 @@ form button:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: var(--Coral);
     color: white;
     text-align: center;
     padding: 1rem 0;

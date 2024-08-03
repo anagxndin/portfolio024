@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Interativo</title>
+    <title>Ana Gondin's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+        </style>
 </head>
 <body>
     <header>
-        <h1>[Seu Nome]</h1>
-        <nav>
-            <ul>
+         
+        <nav id="menuNav">
+            <ul id="menu">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#formacao">Formação Acadêmica</a></li>
                 <li><a href="#projetos">Projetos</a></li>
@@ -21,27 +24,38 @@
         </nav>
     </header>
     <main>
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Olá! Meu nome é [Seu Nome] e sou formada em Técnico em Informática integrado ao Ensino Médio. Atualmente, estou cursando Bacharelado em Sistemas de Informação na Universidade Federal de Uberlândia. Sou uma entusiasta da ciência de dados e estou sempre buscando aprender e aplicar novos conhecimentos nessa área fascinante.</p>
-            <p>Tenho experiência em desenvolvimento de software e estou continuamente me aprimorando em linguagens de programação, análise de dados e machine learning. Minha paixão é transformar dados brutos em informações valiosas e utilizáveis, contribuindo para tomadas de decisão mais inteligentes e estratégicas.</p>
+        <section id="secSobre">
+            <div id="sobre">
+                <img src="images/profile.jpeg" id="profilepic">
+            <p class="sobreP">Olá! Meu nome é Ana Paula e sou formada em Técnico em Informática integrado ao Ensino Médio. Atualmente, estou cursando Bacharelado em Sistemas de Informação na Universidade Federal de Uberlândia. Sou uma entusiasta da ciência de dados e estou sempre buscando aprender e aplicar novos conhecimentos nessa área fascinante.</p>
+            <p class="sobreP">Tenho experiência em desenvolvimento de software e estou continuamente me aprimorando em linguagens de programação, análise de dados e machine learning. Minha paixão é transformar dados brutos em informações valiosas e utilizáveis, contribuindo para tomadas de decisão mais inteligentes e estratégicas.</p>
+            </div>
         </section>
         <section id="formacao">
             <h2>Formação Acadêmica</h2>
-            <p><strong>Técnico em Informática</strong> - [Nome da Escola]</p>
+            <p><strong>Técnico em Informática</strong> - Instituto Federal do Triângulo Mineiro</p>
             <p><strong>Bacharelado em Sistemas de Informação</strong> - Universidade Federal de Uberlândia (Em andamento)</p>
         </section>
         <section id="projetos">
             <h2>Projetos</h2>
             <div class="projeto">
-                <h3>[Nome do Projeto 1]</h3>
-                <p>Descrição do projeto 1.</p>
+                <h3>Perfil no GitHub</h3>
+                <p>Repositórios de diversos projetos que realizei a partir de 2022.</p>
+                <a href="https://github.com/anagxndin">https://github.com/anagxndin</a>
+            </div>
+            <div class="projeto">
+                <h3>ASSISTENTE VIRTUAL VOLTADO PARA A CRIAÇÃO DE PÁGINAS WEB</h3>
+                <p>Como resultado final do projeto temos um site que
+                    apresenta as ferramentas de criação suficientes para criar
+                    páginas contendo menus e artigos em formatos variados
+                    que combinam imagem e texto, por meio de comandos via
+                    botões.</p>
                 <a href="[Link para o projeto]">Veja mais</a>
             </div>
             <div class="projeto">
-                <h3>[Nome do Projeto 2]</h3>
+                <h3>REST API - Pokédex</h3>
                 <p>Descrição do projeto 2.</p>
-                <a href="[Link para o projeto]">Veja mais</a>
+                <a href="https://github.com/anagxndin/Pokedex">Veja mais</a>
             </div>
         </section>
         <section id="habilidades">
@@ -57,24 +71,16 @@
         </section>
         <section id="experiencia">
             <h2>Experiência Profissional</h2>
-            <p><strong>[Nome da Empresa]</strong> - [Cargo]</p>
+            <p><strong>MRV</strong> - Assistente Administrativo</p>
             <p>[Descrição breve da sua função e responsabilidades]</p>
         </section>
         <section id="contato">
             <h2>Contato</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 [Seu Nome]</p>
+        <p>&copy; 2024 Ana Gondin</p>
     </footer>
     <script src="script.js"></script>
 </body>
